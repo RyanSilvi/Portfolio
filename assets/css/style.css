@@ -1,0 +1,42 @@
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fade {
+    margin: 50px;
+    padding: 50px;
+    background-color: lightgreen;
+    opacity: 1;
+
+}
+
+
+section {
+    opacity: 0;
+    transform: translate(0, 260px); 
+    transition: all 1s;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translate(0, 0); 
+}
+
+.orange {
+    color: rgb(247, 183, 73);
+
+}
+
+
+
